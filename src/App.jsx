@@ -1,33 +1,31 @@
-// src/App.jsx
-import React, { useState, createContext } from 'react';
+// src/App.js
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './components/Header';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
+import Banner from './components/Banner';
 import OrderForm from './components/OrderForm';
-import './App.css'; // App için özel stiller
+import Confirmation from './components/Confirmation';
+import './App.css';
 
-// Sepet için context oluşturuyoruz.
-export const CartContext = createContext();
+function App() {
+  const [orderDetails, setOrderDetails] = useState(null);
 
-const App = () => {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product]);
-  };
-
-  const removeFromCart = (id) => {
-    setCart(cart.filter(item => item.id !== id));
+  const handleOrderSubmit = (orderData) => {
+    setOrderDetails(orderData);
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
-      <Header />
-      <ProductList />
-      <Cart />
-      <OrderForm cart={cart} />
-    </CartContext.Provider>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Banner />} />
+          <Route path="/order" element={<OrderForm onSubmit={handleOrderSubmit} />} />
+          <Route path="/confirmation" element={<Confirmation orderDetails={orderDetails} />} />
+        </Routes>
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
