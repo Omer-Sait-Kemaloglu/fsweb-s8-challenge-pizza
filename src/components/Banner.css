@@ -12,24 +12,22 @@
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 40%; /* Yükseklik değiştirildi */
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px;
 }
 
 .banner-text h1 {
   font-family: 'Satisfy', cursive;
-  font-size: 48px;
+  font-size: 60px; /* Boyut artırıldı */
   margin: 0;
 }
 
 .banner-text p {
   font-family: 'Barlow', sans-serif;
-  font-size: 24px;
-  margin: 5px 0;
+  font-size: 28px; /* Boyut artırıldı */
+  margin: 20px 0; /* Boşluk eklendi */
 }
 
 .order-button {
