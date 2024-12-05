@@ -1,0 +1,61 @@
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Üstten hizalama */
+    align-items: center;
+    height: 100vh;
+    background-color: #CE2829; /* Kırmızı arka plan */
+    color: #FAF7F2; /* Beyaz metin */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .confirmation-title {
+    font-size: 36px;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-subtitle {
+    font-size: 28px;
+    color: #FDC913; /* Sarı renk */
+    font-family: "Barlow";
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-order-status {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .confirmation-divider {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #FAF7F2; /* Beyaz çizgi */
+    margin-bottom: 20px;
+  }
+  
+  .order-summary, .order-total {
+    background-color: #FAF7F2; /* Beyaz kutu */
+    color: #CE2829; /* Kırmızı yazı */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left; /* Yazıları sola hizala */
+  }
+  
+  .order-summary h2, .order-total h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .order-summary p, .order-total p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  

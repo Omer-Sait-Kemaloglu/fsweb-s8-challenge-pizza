@@ -1,5 +1,5 @@
-// src/components/OrderForm.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './OrderForm.css';
 
 const OrderForm = ({ onSubmit }) => {
@@ -11,6 +11,8 @@ const OrderForm = ({ onSubmit }) => {
     quantity: 1,
     errors: {},
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,6 +40,7 @@ const OrderForm = ({ onSubmit }) => {
       setFormState({ ...formState, errors });
     } else {
       onSubmit(formState);
+      navigate('/confirmation');
     }
   };
 

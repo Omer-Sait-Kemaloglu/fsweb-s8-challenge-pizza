@@ -1,0 +1,32 @@
+/* src/components/MostRatedMenus.css */
+.most-rated-menus {
+    padding: 20px;
+    background-color: #FAF7F2;
+  }
+  
+  .most-rated-menus h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .menus {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu {
+    text-align: center;
+  }
+  
+  .menu img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .menu span {
+    display: block;
+    margin-top: 10px;
+    color: #FFD700; /* Yıldızların rengi */
+  }
+  

@@ -1,0 +1,44 @@
+/* src/components/SpecialOffers.css */
+.special-offers {
+  padding: 20px;
+  background-color: #FAF7F2;
+}
+
+.special-offers h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #CE2829; /* Başlığın rengini kırmızı yaptık */
+}
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.offer {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge ekledik */
+  transition: transform 0.3s;
+}
+
+.offer img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.offer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #CE2829;
+}
+
+.offer:hover {
+  transform: scale(1.05); /* Hover efektinde hafif büyütme */
+}

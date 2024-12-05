@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="header">
-      <h1>Teknolojik Yemekler</h1>
+      <h1></h1>
       <nav>
         <ul>
           <li><Link to="/">Anasayfa</Link></li>

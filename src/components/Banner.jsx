@@ -10,6 +10,7 @@ const Banner = () => {
       <img src={homeBanner} alt="Home Banner" className="banner-image" />
       <div className="banner-text">
         <h1>Teknolojik Yemekler</h1>
+       
         <p>KOD ACIKTIRIR</p>
         <p>PİZZA, DOYURUR</p>
         <Link to="/order">

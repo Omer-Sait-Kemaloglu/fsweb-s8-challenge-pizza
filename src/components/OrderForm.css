@@ -1,11 +1,37 @@
 /* src/components/OrderForm.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/iteration-1-images/home-banner.png');
+  background-size: cover; /* Resmi ekranın tamamını kapsayacak şekilde ölçekle */
+  background-position: center; /* Görseli merkeze hizala */
+  background-repeat: no-repeat; /* Görselin tekrar etmesini engelle */
+  height: 100vh; /* Tam ekran yüksekliği */
+  width: 100%; /* Tam genişlik */
+  font-family: 'Satisfy', cursive; /* Varsayılan yazı tipi */
+}
+
 .order-form {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(250, 247, 242, 0.9); /* Şeffaf beyaz üst katman */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif bir gölge efekti */
+}
+
+  .order-form-container {
+    background-image: url('/images/iteration-1-images/home-banner.png');
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    background-color: #FAF7F2;
     border-radius: 10px;
-    font-family: 'Barlow', sans-serif;
+  }
+  
+  .form-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Üstteki resim ile form arasında boşluk */
   }
   
   .order-form h2 {
@@ -27,7 +53,7 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #f7f6f6;
+    border: 1px solid #ccc;
     border-radius: 5px;
   }
   
