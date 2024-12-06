@@ -8,7 +8,7 @@ const MostRatedMenus = () => {
       <h2>En Çok Puanlanan Menüler</h2>
       <div className="menus">
         <div className="menu">
-          <img src="/images/iteration-2-images/pictures/menu1.png" alt="Tavernalılı Pizza" />
+          <img src="/images/iteration-2-images/cta/kart-2.png" alt="Tavernalılı Pizza" />
           <p>Tavernalılı Pizza</p>
           <span>⭐⭐⭐⭐⭐</span>
         </div>

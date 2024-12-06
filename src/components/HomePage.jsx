@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
+
 import './HomePage.css';
 
 const HomePage = () => {
@@ -23,24 +24,24 @@ const HomePage = () => {
         <h2>Özel Lezzetler</h2>
         <div className="offers">
           <div className="offer">
-            <img src="https://via.placeholder.com/150" alt="" />
+            <img src="/images/iteration-2-images/cta/kart-1.png" alt="" />
             <p>Pastırmalı Akdeniz & Et Burger</p>
             <button>İncele</button>
           </div>
           <div className="offer">
-            <img src="https://via.placeholder.com/150" alt="Hackathon Burger Menüsü" />
+            <img src="/images/iteration-2-images/cta/kart-2.png" alt="Hackathon Burger Menüsü" />
             <p>Hackathon Burger Menüsü</p>
             <button>İncele</button>
           </div>
           <div className="offer">
-            <img src="https://via.placeholder.com/150" alt="Hızlı Teslimat" />
+            <img src="/images/iteration-2-images/cta/kart-3.png" alt="Hızlı Teslimat" />
             <p>Hızlı Teslimat</p>
             <button>İncele</button>
           </div>
         </div>
       </section>
       <section className="fast-delivery">
-        <img src="https://via.placeholder.com/150" alt="Hızlı Teslimat" className="delivery-image" />
+        <img src="/images/iteration-2-images/cta/kart-3.png" alt="Hızlı Teslimat" className="delivery-image" />
         <div className="delivery-text">
           <p>Çooook hızlıyız!</p>
         </div>
