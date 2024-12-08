@@ -3,30 +3,32 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('/images/iteration-1-images/home-banner.png');
-  background-size: cover; /* Resmi ekranın tamamını kapsayacak şekilde ölçekle */
-  background-position: center; /* Görseli merkeze hizala */
-  background-repeat: no-repeat; /* Görselin tekrar etmesini engelle */
-  height: 100vh; /* Tam ekran yüksekliği */
-  width: 100%; /* Tam genişlik */
-  font-family: 'Satisfy', cursive; /* Varsayılan yazı tipi */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 110vh; /* Arka planı biraz daha uzat */
+  width: 100%;
+  font-family: 'Satisfy', cursive;
 }
 
 .order-form {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 20px auto; /* Daha az boşluk */
   padding: 20px;
-  background-color: rgba(250, 247, 242, 0.9); /* Şeffaf beyaz üst katman */
+  background-color: rgba(250, 247, 242, 0.9);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif bir gölge efekti */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-  .order-form-container {
-    background-image: url('/images/iteration-1-images/home-banner.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-  }
+
+.order-form-container {
+  background-image: url('/images/iteration-1-images/home-banner.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px; /* Daha fazla iç boşluk */
+  border-radius: 10px;
+}
+
   
   .form-banner {
     width: 100%;

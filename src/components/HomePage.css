@@ -72,10 +72,12 @@
 }
 
 .offer img {
-  width: 150px;
+  width: 350px; /* Yeni genişlik */
   height: auto;
   border-radius: 10px;
 }
+
+
 
 .offer button {
   background-color: #CE2829;
